@@ -31,6 +31,38 @@ public class KanbanCardModel {
     @Column(nullable = false, length = 50)
     String status;
 
+    public void setCodigo(Integer codigo) {
+        this.codigo = codigo;
+    }
+
+    public void setTipoCard(String tipoCard) {
+        this.tipoCard = tipoCard;
+    }
+
+    public void setTituloCard(String tituloCard) {
+        this.tituloCard = tituloCard;
+    }
+
+    public void setProjeto(String projeto) {
+        this.projeto = projeto;
+    }
+
+    public void setPrevista(LocalDate prevista) {
+        this.prevista = prevista;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public void setEquipe(String equipe) {
+        this.equipe = equipe;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
     public int getCodigo() {
         return codigo;
     }
